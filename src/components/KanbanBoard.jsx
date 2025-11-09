@@ -2,32 +2,7 @@ import { useState } from 'react'
 import Column from './Column'
 import './kanban.css'
 
-const initial = [
-    {
-        id: 1,
-        title: 'Exemplo: Definir layout',
-        description: 'Criar estrutura inicial do kanban',
-        assignee: 'Ana',
-        dueDate: '2025-12-01',
-        status: 'faca',
-    },
-    {
-        id: 2,
-        title: 'Exemplo: Implementar API',
-        description: 'Conectar a API de backend',
-        assignee: 'Bruno',
-        dueDate: '2025-12-10',
-        status: 'progresso',
-    },
-    {
-        id: 3,
-        title: 'Exemplo: Testes',
-        description: 'Escrever testes básicos',
-        assignee: 'Carla',
-        dueDate: '2025-12-20',
-        status: 'feito',
-    },
-]
+const initial = []
 
 export default function KanbanBoard() {
     const [cards, setCards] = useState(initial)
