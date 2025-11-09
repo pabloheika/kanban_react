@@ -1,0 +1,100 @@
+.kanban-root {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem 0;
+}
+
+.kanban-column {
+    /* keep a subtle structure but rely on Bootstrap cards for visuals */
+    background: transparent;
+    border-radius: 8px;
+    padding: 0;
+    flex: 1 1 0;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-head {
+    text-align: left;
+    padding: 0 0.5rem;
+}
+
+.column-head h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.column-action {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.add-button {
+    width: 100%;
+}
+
+.add-form {
+    display: block;
+}
+
+.add-form input,
+.add-form textarea {
+    width: 100%;
+}
+
+.add-form textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cards-list {
+    padding: 0.25rem 0;
+    overflow: auto;
+    display: flex;
+    gap: 0.6rem;
+    flex-direction: column;
+}
+
+.kanban-card {
+    text-align: left;
+}
+
+.card-title {
+    margin-bottom: 0.25rem;
+}
+
+.card-desc {
+    color: #ddd;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-meta {
+    font-size: 0.85rem;
+    color: #ccc;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.card-actions {
+    margin-top: 0.5rem;
+}
+
+/* move-btn styling handled by Bootstrap buttons */
+
+.empty {
+    color: #bbb;
+    padding: 0.75rem;
+}
+
+@media (max-width:800px) {
+    .kanban-root {
+        flex-direction: column;
+    }
+}
